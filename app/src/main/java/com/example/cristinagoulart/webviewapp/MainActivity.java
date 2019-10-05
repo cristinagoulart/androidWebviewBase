@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
         // With non SSL sites
         mWebView.setWebViewClient(new SSLTolerantWebViewClient());
-        String urlToGo = "http://google.com";
+//        String urlToGo = "http://google.com";
+        String urlToGo = "file:///android_asset/game/index.html";
+
         mWebView.loadUrl(urlToGo);
 
     }
